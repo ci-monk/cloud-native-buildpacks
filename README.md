@@ -132,7 +132,7 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 
 >
 > * Email: luccapsm@protonmail.com
-> * Website: https://github.com/lpmatos
+> * Website: https://linktr.ee/lpmatos
 > * Github: [@lpmatos](https://github.com/lpmatos)
 > * GitLab: [@lpmatos](https://gitlab.com/lpmatos)
 > * LinkedIn: [@luccapessoa](https://www.linkedin.com/in/luccapessoa/)
