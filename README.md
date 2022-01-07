@@ -126,38 +126,42 @@ bash scripts/hooks.sh
 
 ## ➤ Author <a name = "author"></a>
 
-👤 **Lucca Pessoa**
-
-Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
+👤 Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
 
 >
-> * Email: luccapsm@protonmail.com
-> * Website: https://linktr.ee/lpmatos
-> * Github: [@lpmatos](https://github.com/lpmatos)
-> * GitLab: [@lpmatos](https://gitlab.com/lpmatos)
-> * LinkedIn: [@luccapessoa](https://www.linkedin.com/in/luccapessoa/)
+> * Linktree: https://linktr.ee/lpmatos
 >
 
 ## ➤ Versioning <a name = "versioning"></a>
 
 To check the change history, please access the [**CHANGELOG.md**](CHANGELOG.md) file.
 
-## ➤ Contributing <a name = "contributing"></a>
+## ➤ Project status <a name = "project-status"></a>
 
-Contributions, issues and feature requests are welcome. Feel free to check issues page if you want to contribute. [Check the contributing guide](CONTRIBUTING.md).
+This repository is a study project, therefore, it will not always be maintained 👻.
 
-## ➤ Troubleshooting <a name = "troubleshooting"></a>
+## ➤ Donations <a name = "donations"></a>
 
-If you have any problems, please contact [me](luccapsm@protonmail.com).
+<p align="center">
+  <a href="https://www.blockchain.com/pt/btc/address/bc1qn50elv826qs2qd6xhfh6n79649epqyaqmtwky5">
+    <img alt="BTC Address" src="https://img.shields.io/badge/BTC%20Address-black?style=for-the-badge&logo=bitcoin&logoColor=white">
+  </a>
 
-## ➤ License <a name = "license"></a>
-
-This repository is released under the [MIT license](https://opensource.org/licenses/MIT). In short, this means you are free to use this software in any personal, open-source or commercial projects. Attribution is optional but appreciated.
+  <a href="https://live.blockcypher.com/ltc/address/ltc1qwzrxmlmzzx68k2dnrcrplc4thadm75khzrznjw/">
+    <img alt="Litecoin Address" src="https://img.shields.io/badge/Litecoin%20Address-black?style=for-the-badge&logo=litecoin&logoColor=white">
+  </a>
+</p>
 
 ## ➤ Show your support <a name = "show-your-support"></a>
 
-Give a ⭐️ if this project helped you!
+<div align="center">
 
----
+Give me a ⭐️ if this project helped you!
 
-Made with 💜 by [me](https://github.com/lpmatos) :wave: inspired on [readme-md-generator](https://github.com/kefranabg/readme-md-generator)
+<p>
+  <img alt="gif-header" src="https://www.icegif.com/wp-content/uploads/baby-yoda-bye-bye-icegif.gif" width="350px" float="center"/>
+</p>
+
+Made with 💜 by [me](https://github.com/lpmatos) 👋 inspired on [readme-md-generator](https://github.com/kefranabg/readme-md-generator)
+
+</div>
