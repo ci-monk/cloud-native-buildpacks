@@ -171,8 +171,11 @@ In the buildpacks we have components and operations:
 
 ## ➤ Useful Links <a name = "useful-links"></a>
 
-- https://buildpacks.io/
-- https://tanzu.vmware.com/developer/guides/cnb-what-is/
+- [CNB root documentation](https://buildpacks.io/)
+- [Tanzu article](https://tanzu.vmware.com/developer/guides/cnb-what-is/)
+- [CNCF article](https://www.cncf.io/blog/2020/11/18/toc-approves-cloud-native-buildpacks-from-sandbox-to-incubation/)
+- [Google article](https://cloud.google.com/blog/products/containers-kubernetes/google-cloud-now-supports-buildpacks)
+- [AWS article](https://aws.amazon.com/blogs/containers/creating-container-images-with-cloud-native-buildpacks-using-aws-codebuild-and-aws-codepipeline/)
 
 ## ➤ Author <a name = "author"></a>
 
