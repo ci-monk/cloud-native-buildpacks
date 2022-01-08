@@ -46,6 +46,16 @@ This will give you access to the code on your **local machine**.
 - [Docker](https://docs.docker.com/)
 - [Pack](https://buildpacks.io/docs/tools/pack/)
 
+## ➤ Description <a name = "description"></a>
+
+The goal of the Cloud Native Buildpacks (CNB) project is to translate source code into container images with a focus on developer productivity, container security, and operations involving containerized applications at scale. The project also aims to unify the buildpack ecosystems of the past with a well-defined contract ideal for modern cloud native platforms.
+
+“Cloud Native Buildpacks enable developers to work at whichever layer of abstraction is most productive for them while solving big problems like vulnerable dependencies and slow builds,” said Emily Casey, Buildpacks maintainer and staff engineer at VMware. “The project’s robust specification and tools have helped facilitate an ecosystem of composable buildpacks that interoperate with diverse platforms. We are excited to continue to grow the community as Buildpacks moves to incubation.”
+
+Cloud Native Buildpacks were accepted into the CNCF Sandbox in October 2018. Buildpacks are used in production by end user organizations, including Greenhouse, Salesforce, and VMware; in cloud native open source software Cloud Foundry on K8s, Google Skaffold, Hashicorp Waypoint, and kpack; and in commercial offerings including DigitalOcean App Platform, Google Cloud, Salesforce Evergreen, and VMware Tanzu Build Service.
+
+“Developers shouldn’t have to think about how to package their applications for deployment, so I’m excited to see Cloud Native Buildpacks promoted to a CNCF incubation project,” said James Ward, developer advocate, Google Cloud. “At Google Cloud, we’ve open sourced our Buildpacks and added support for them into numerous products, including Cloud Build, Cloud Run, App Engine, Cloud Functions, Cloud Code, Cloud Shell, and Skaffold. Now going from source to running on the cloud is even easier.”
+
 ## ➤ Samples <a name = "samples"></a>
 
 ### Bash
@@ -84,13 +94,25 @@ This will give you access to the code on your **local machine**.
 
 This section aims to describe at a high level what the tools we use are and how we use them, without reproducing documentation that is better written (and more up to date) in the repositories and websites of these tools themselves. It's recommended to familiarize yourself with these tools as early as possible.
 
+The Cloud Native Buildpacks project is complementary to other CNCF projects, including Helm, Harbor, and Kubernetes. Cloud Native Buildpacks produce Open Container Initiative (OCI) images managed by Helm, stored in Harbor, and deployed to Kubernetes. The project’s overarching goal is to provide a reliable, safe, modular, and fast way to build OCI images from source or input artifacts
+
+### Why Are They Important?
+
+There are two things to consider when discussing the value of Cloud Native Buildpacks: how the container is created, and how the container is maintained.
+
+If you’ve created a container using Dockerfile before, you’re already familiar with the decisions you need to make. You need to decide which base image to base your container on and which version of that image to use, and then ensure it has the proper versions of all the dependencies that your application relies on. After that, you need to bring in the additional dependencies and runtimes, build your application, and then slim down your container image to ensure it’s as lean and quick as possible.
+
+Cloud Native Buildpacks know how to build and containerize your application. If it’s a Java app, they will bring in the JVM. If it’s a Ruby app, they will bring in the Ruby runtime.
+
+Your container also needs to be maintained. Throughout the entire stack—from the base image to dependencies to your application runtime—it’s important to keep things up to date and secure. Since Cloud Native Buildpacks separate out the base image, the runtime, and your application into different layers, they’re very quick to update only the layers that changed.
+
 ### What are buildpacks?
 
 Buildpacks allow you to convert your source code into a secure, efficient, production ready container image. It provides a framework and runtime support for applications and examine your apps to determine all the dependencies it needs and configure them appropriately to run on any cloud.
 
 ### How do they work?
 
-Each buildpack comprises of two phases:
+Cloud Native Buildpacks are an abstract lifecycle, so they are more of a definition than an implementation. Each buildpack comprises of two phases:
 
 **Detect phase**
 
@@ -111,6 +133,13 @@ For example:
 
 - A Python buildpack may run pip install -r requirements.txt if it detected a requirements.txt file
 - A Node buildpack may run npm install if it detected a package-lock.json file
+
+That lifecycle is broken down into four steps:
+
+1. **Detection**: Automatically determines which buildpacks are required to build the application.
+2. **Analysis**: If any layer can be reused from a previous build, pulls it from the cache. (This helps optimize the build process.)
+3. **Build**: Creates the runnable artifacts from your application’s source code
+4. **Export**: Creates the final OCI-compliant image.
 
 ### What is a builder?
 
@@ -139,6 +168,11 @@ In the buildpacks we have components and operations:
 - Operations:
   - **Build**: Build is the process of executing one or more buildpacks against the app's source code to produce a runnable OCI image.
   - **Rebase**: Rebase allows app developers or operators to rapidly update an app image when its stack's run image has changed.
+
+## ➤ Useful Links <a name = "useful-links"></a>
+
+- https://buildpacks.io/
+- https://tanzu.vmware.com/developer/guides/cnb-what-is/
 
 ## ➤ Author <a name = "author"></a>
 
