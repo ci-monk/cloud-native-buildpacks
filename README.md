@@ -124,15 +124,15 @@ For example, let's say demo-builder contains the Python and Node buildpack. Then
 In the buildpacks we have components and operations:
 
 - Components:
-  - Buildpack: A buildpack is a set of executables that inspects your app source code and create a plan to build and run your application.
-  - Lifecycle: The lifecycle orchestrates buildpack execution, then assembles the resulting artifacts into a final app image.
-  - Builder: A builder is an image that contains all the components necessary to execute a build. A builder image is created by taking a build image and adding a lifecycle, buildpacks, and files that configure aspects of the build including the buildpack detection order and the location(s) of the run image
-  - Buildpack Group: A buildpack group is a list of specific buildpacks composed together in an order such that the list is suitable for building an application. Because buildpacks are modular and reusable, a buildpack group is what allows you to connect multiple modular buildpacks together.
-  - Platform: A platform uses a lifecycle, buildpacks (packaged in a builder), and application source code to produce an OCI image.
-  - Stack: A stack is composed of two images that are intended to work together: The build image of a stack provides the base image from which the build environment is constructed. The build environment is the containerized environment in which the lifecycle (and thereby buildpacks) are executed. The run image of a stack provides the base image from which application images are built.
+  - **Buildpack**: A buildpack is a set of executables that inspects your app source code and create a plan to build and run your application.
+  - **Lifecycle**: The lifecycle orchestrates buildpack execution, then assembles the resulting artifacts into a final app image.
+  - **Builder**: A builder is an image that contains all the components necessary to execute a build. A builder image is created by taking a build image and adding a lifecycle, buildpacks, and files that configure aspects of the build including the buildpack detection order and the location(s) of the run image
+  - **Buildpack Group**: A buildpack group is a list of specific buildpacks composed together in an order such that the list is suitable for building an application. Because buildpacks are modular and reusable, a buildpack group is what allows you to connect multiple modular buildpacks together.
+  - **Platform**: A platform uses a lifecycle, buildpacks (packaged in a builder), and application source code to produce an OCI image.
+  - **Stack**: A stack is composed of two images that are intended to work together: The build image of a stack provides the base image from which the build environment is constructed. The build environment is the containerized environment in which the lifecycle (and thereby buildpacks) are executed. The run image of a stack provides the base image from which application images are built.
 - Operations:
-  - Build: Build is the process of executing one or more buildpacks against the app's source code to produce a runnable OCI image.
-  - Rebase: Rebase allows app developers or operators to rapidly update an app image when its stack's run image has changed.
+  - **Build**: Build is the process of executing one or more buildpacks against the app's source code to produce a runnable OCI image.
+  - **Rebase**: Rebase allows app developers or operators to rapidly update an app image when its stack's run image has changed.
 
 ## ➤ Author <a name = "author"></a>
 
