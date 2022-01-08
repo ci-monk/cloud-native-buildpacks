@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  ✨ A collection of examples using [cloud native buildpacks](https://buildpacks.io/) ✨
+  ✨ A collection of examples using <a href="https://buildpacks.io/">cloud native buildpacks</a> ✨
 </p>
 
 <p align="center">
@@ -40,6 +40,11 @@ If you want contribute on this project, first you need to make a **git clone**:
 >
 
 This will give you access to the code on your **local machine**.
+
+## ➤ Pre-Requisites <a name = "pre-requisites"></a>
+
+- [Docker](https://docs.docker.com/)
+- [Pack](https://buildpacks.io/docs/tools/pack/)
 
 ## ➤ Samples <a name = "samples"></a>
 

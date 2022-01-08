@@ -1,4 +1,4 @@
-# Ruby sample app using Unicorn web server
+# Ruby example app using Unicorn
 
 ## Building
 
@@ -9,7 +9,7 @@ pack build unicorn-sample --buildpack gcr.io/paketo-buildpacks/ruby --builder pa
 ## Running
 
 ```bash
-docker run --interactive --tty --env PORT=8080 --publish 8080:8080 unicorn-sample
+docker run -it --rm --env PORT=8080 -p 8080:8080 unicorn-sample
 ```
 
 ## Viewing
