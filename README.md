@@ -78,6 +78,7 @@ This will give you access to the code on your **local machine**.
 
 * [Rake](/ruby/rake)
 * [Unicorn](/ruby/unicorn)
+* [Puma](/ruby/puma)
 
 ## ➤ Concepts <a name = "concepts"></a>
 
