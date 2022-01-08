@@ -1,4 +1,4 @@
-# NGINX Server Sample Application
+# NGINX Server example app
 
 ## Building
 

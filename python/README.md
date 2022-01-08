@@ -1,4 +1,4 @@
-# Python Sample App
+# Python example app
 
 ## Building
 

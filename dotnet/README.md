@@ -1,4 +1,4 @@
-# Dotnet Sample App using Mod
+# Dotnet example app using Mod
 
 ## Building
 

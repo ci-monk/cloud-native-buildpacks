@@ -1,4 +1,4 @@
-# Go Sample App using Mod
+# Go example app using Mod
 
 ## Building
 

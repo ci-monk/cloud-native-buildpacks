@@ -1,4 +1,4 @@
-# Bash Script Sample App
+# Bash Script example app
 
 ## Building
 

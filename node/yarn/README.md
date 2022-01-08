@@ -1,4 +1,4 @@
-# Node.js Sample App using Yarn
+# Node.js example app using Yarn
 
 ## Building
 

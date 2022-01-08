@@ -1,4 +1,4 @@
-# Node.js Sample App using no package manager
+# Node.js example app using no package manager
 
 ## Building
 

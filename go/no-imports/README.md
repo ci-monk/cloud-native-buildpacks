@@ -1,4 +1,4 @@
-# Go Sample App using no imports
+# Go example app using no imports
 
 ## Building
 
