@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+echo "---> Run shell-run-cnb Buildpack"
+
+# 1. INPUT ARGUMENTS
+layersdir=$1
+
+# 2. GIVEN PERMISSIONS
+chmod +x run.sh
+
+# 3. SET DEFAULT START COMMAND
+cat > "$layersdir/launch.toml" <<EOL
+[[processes]]
+type = "web"
+command = "./run.sh"
+EOL
+
+# LIST CONTENTS
+echo
+echo "Here are the contents of the current working directory:"
+ls -alHR

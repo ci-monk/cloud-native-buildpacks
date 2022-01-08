@@ -1,0 +1,29 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+- name: NPM install
+  init: npm install
+- name: Docker Deamon
+  command: sudo docker-up
+
+github:
+  prebuilds:
+    main: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: true
+    addComment: true
+    addBadge: false
+    addLabel: prebuilt-in-gitpod
+
+vscode:
+  extensions:
+  - mhutchie.git-graph
+  - mikestead.dotenv
+  - donjayamanne.githistory
+  - hediet.vscode-drawio
+  - shd101wyy.markdown-preview-enhanced
+  - timonwong.shellcheck
+  - tabnine.tabnine-vscode
+  - redhat.vscode-yaml
